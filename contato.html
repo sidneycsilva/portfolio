@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sidney Carvalho Silva">
+    <meta name="description" content="Portfólio de desenvolvedor web especializado em aplicações modernas, responsivas e bem estruturadas.">
+    <meta name="theme-color" content="#0a9ecf">
+
+    <title>Portfólio</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <section class="hero-wrapper">
+
+        <div id="header"></div>
+
+        <div class="hero">
+
+            <div class="lado-left">
+                <div class="contato-text">
+                    <h1>Contato</h1>
+                    <p>
+                        Vamos conversar?<br>
+                        Entre em contato para trocar ideias e encontrar a melhor solução para o seu projeto.
+                    </p>
+                </div>
+
+                <div class="hero-qrcode">
+                    <a href="https://wa.me/5593991712448" target="_blank" rel="noopener noopener">
+                        <img src="./img/qr_code.png" alt="imagem qr_code de contato">
+                        <p>Clique aqui ou aponte a câmera</p>
+                    </a>
+                    
+                </div>
+            </div>
+
+            <form 
+                class="form-contato" 
+                action="https://formsubmit.co/sid_neycs@hotmail.com" 
+                method="POST"
+            >
+                <input type="text" name="nome" placeholder="Seu nome" required>
+                <input type="tel" name="whatsapp" placeholder="WhatsApp" required>
+                <input type="email" name="email" placeholder="Seu e-mail" required>
+                <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
+
+                <!-- opções extras -->
+                <input type="hidden" name="Contato_Portifolio" value="Nova mensagem do Portfólio">
+                <input type="hidden" name="_captcha" value="true">
+
+                <button type="submit">Enviar</button>
+            </form>
+
+        </div>
+
+    </section>
+
+    <script src="js/javascript.js"></script>
+</body>
+</html>
