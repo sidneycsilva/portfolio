@@ -18,3 +18,28 @@ fetch("components/header.html")
       }
     });
   });
+
+
+
+//////////////////// MENSAGEM PRONTA PARA WHATAPPS \\\\\\\\\\\\\\\\\\\\
+//====================================================================\\
+document.getElementById("formContato").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    let nome = document.querySelector("input[name='nome']").value;
+    let whatsapp = document.querySelector("input[name='whatsapp']").value;
+    let email = document.querySelector("input[name='email']").value;
+    let mensagem = document.querySelector("textarea[name='mensagem']").value;
+
+    let texto = encodeURIComponent(
+`Olá!
+Me nome é: ${nome}
+WhatsApp: ${whatsapp}
+Email: ${email}
+
+Mensagem:
+${mensagem}`
+    );
+    let url = `https://wa.me/5593991712448?text=${texto}`;
+    window.open(url, "_blank");
+});
